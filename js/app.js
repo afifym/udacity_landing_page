@@ -49,6 +49,7 @@ function isVisible(elm) {
 
 function ease(t, b, c, d) {
   // Used for smoother and less boring scrolling
+  // Attributed to http://gizma.com/easing
   t /= d / 2;
   if (t < 1) return (c / 2) * t * t + b;
   t--;
