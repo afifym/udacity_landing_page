@@ -73,7 +73,6 @@ function buildItems(elms) {
     a.innerText = itemText; // putting the section name
     a.setAttribute("style", "cursor: pointer; text-decoration:none;");
     a.setAttribute("id", `${elm.id}`); // used later for the scrolling to section event
-    // a.setAttribute("class", "link-item");
     
     li.appendChild(a);
     li.setAttribute("style", "padding: 10px;");
@@ -86,7 +85,6 @@ function buildItems(elms) {
 function windowScroll() {
   // Looking for the Active Section and adding the active class
 
-  // let aLinks = document.querySelectorAll(".link-item");
   sections.forEach((sec) => {
     if (isVisible(sec)) {
       sec.classList.add("your-active-class");
