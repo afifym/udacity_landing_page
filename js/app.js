@@ -44,7 +44,9 @@ function getItemText(elms) {
 function isVisible(elm) {
   // Checking if a single element is visible in Viewport
   let pos = elm.getBoundingClientRect();
-  return pos.top >= 0 && pos.bottom <= window.innerHeight;
+  let vHeight = window.innerHeight;
+         
+  return (pos.top >= 0 && pos.bottom <= vHeight) || (pos.top <= 0 && (pos.bottom >= vHeight));
 }
 
 function ease(t, b, c, d) {

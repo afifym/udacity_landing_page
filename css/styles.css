@@ -211,6 +211,7 @@ section.your-active-class {
     rgba(0, 0, 0, 0.1) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  background-color: black;
 }
 
 section.your-active-class .landing__container::before {
